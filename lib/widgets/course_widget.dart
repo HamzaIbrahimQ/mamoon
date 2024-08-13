@@ -19,7 +19,7 @@ class CourseWidget extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         overlayColor:
-            WidgetStateProperty.all(Colors.purple[700]?.withOpacity(.1)),
+            WidgetStateProperty.all(Color(0xFF9C4877)?.withOpacity(.1)),
         borderRadius: BorderRadius.circular(24.r),
         child: Ink(
           padding: EdgeInsets.symmetric(
@@ -28,7 +28,7 @@ class CourseWidget extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: (course.isSelected ?? false)
-                ? Colors.purple[700]
+                ? Color(0xFF9C4877)
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(24.r),
             border: Border.all(

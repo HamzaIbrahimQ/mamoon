@@ -33,7 +33,7 @@ class UserInfoWidget extends StatelessWidget {
             TextSpan(
               text: ' $value',
               style: TextStyle(
-                color: Colors.purple[700],
+                color: Color(0xFF9C4877),
                 fontSize: 13.sp,
                 fontWeight: FontWeight.w600,
               ),

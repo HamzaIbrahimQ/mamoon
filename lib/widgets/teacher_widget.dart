@@ -31,7 +31,7 @@ class TeacherWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(100.r),
             border: Border.all(
               width: .5.w,
-              color: Colors.purple[700]!,
+              color: Color(0xFF9C4877)!,
             ),
             image:  DecorationImage(
               image: CachedNetworkImageProvider(
@@ -75,7 +75,7 @@ class TeacherWidget extends StatelessWidget {
               style: TextStyle(
                 fontSize: 11.sp,
                 fontWeight: FontWeight.w500,
-                color: Colors.purple[700],
+                color: Color(0xFF9C4877),
               ),
             ),
           ],

@@ -32,7 +32,7 @@ class ChatsPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => _onAddNewMessagePressed(context),
               style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.all(Colors.purple[700]),
+                backgroundColor: WidgetStateProperty.all(Color(0xFF9C4877)),
                 fixedSize: WidgetStateProperty.all(Size(.5.sw, 40.h)),
               ),
               child: Row(

@@ -76,7 +76,7 @@ class CourseProgressWidget extends StatelessWidget {
                     Text(
                       '${progressValue.toInt()}% مكتمل',
                       style: TextStyle(
-                        color: Colors.purple[700],
+                        color: Color(0xFF9C4877),
                         fontSize: 11.sp,
                       ),
                     ),
@@ -89,7 +89,7 @@ class CourseProgressWidget extends StatelessWidget {
                 LinearProgressIndicator(
                   value: progressValue / 100,
                   borderRadius: BorderRadius.circular(8.r),
-                  color: Colors.purple[700],
+                  color: Color(0xFF9C4877),
                 ),
               ],
             ),

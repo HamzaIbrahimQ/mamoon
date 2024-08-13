@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           supportedLocales: [
             Locale('ar', ''), // Arabic
           ],
-          home: AllCoursesPage(),
+          home: MyCoursesPage(),
         );
       },
     );

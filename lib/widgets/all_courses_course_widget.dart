@@ -77,7 +77,7 @@ class AllCoursesCourseWidget extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 12.sp,
                     fontWeight: FontWeight.w600,
-                    color: Colors.purple[700],
+                    color: Color(0xFF9C4877),
                   ),
                 )
               ],

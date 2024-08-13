@@ -46,43 +46,47 @@ class _AllCoursesPageState extends State<AllCoursesPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            48.verticalSpace,
 
             /// Messages title and search icon
-            SearchTextFieldWidget(
-              controller: _searchController,
-              onFieldSubmitted: (value) => _onSearchSubmitted(value),
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.only(top: 48.h),
+              child: SearchTextFieldWidget(
+                controller: _searchController,
+                onFieldSubmitted: (value) => _onSearchSubmitted(value),
+              ),
             ),
 
             20.verticalSpace,
 
-            /// Title
-            const SectionTitleWidget(title: 'المادة المطلوبة'),
-
-            20.verticalSpace,
-
-            /// Courses
-            StatefulBuilder(
-              builder: (context, setState) {
-                return Wrap(
-                  children: courses
-                      .map(
-                        (item) => CourseWidget(
-                          course: item,
-                          onTap: () => _onCourseSelected(item),
-                        ),
-                      )
-                      .toList(),
-                );
-              },
-            ),
-
-            24.verticalSpace,
-
+            /// Page content
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    /// Title
+                    const SectionTitleWidget(title: 'المادة المطلوبة'),
+
+                    20.verticalSpace,
+
+                    /// Courses
+                    StatefulBuilder(
+                      builder: (context, setState) {
+                        return Wrap(
+                          children: courses
+                              .map(
+                                (item) => CourseWidget(
+                              course: item,
+                              onTap: () => _onCourseSelected(item),
+                            ),
+                          )
+                              .toList(),
+                        );
+                      },
+                    ),
+
+                    24.verticalSpace,
+
                     /// Title
                     SectionTitleWidget(
                       title: 'أساتذة موقع وتد',
